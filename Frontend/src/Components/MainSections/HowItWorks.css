@@ -1,0 +1,84 @@
+/* Main section for the "How It Works" component */
+.how-it-works-section {
+  padding: 6rem 1rem;
+  background-color: #f0f4f8; /* A light, calming background color */
+  text-align: center;
+}
+
+/* Main title styling */
+.how-it-works-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #1a202c;
+  margin-bottom: 4rem;
+}
+
+/* Flex container for the step cards */
+.steps-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Styling for an individual step card */
+.step-card {
+  background-color: #ffffff;
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.step-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* Styling for the step number */
+.step-number {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #007bff; /* Primary color for numbers */
+  margin-bottom: 0.5rem;
+  background-color: #e6f2ff;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Step title styling */
+.step-card h3 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #1a202c;
+  margin-bottom: 0.8rem;
+}
+
+/* Step description styling */
+.step-card p {
+  font-size: 1.1rem;
+  color: #4a5568;
+  line-height: 1.6;
+}
+
+/* Media query for larger screens to use a horizontal layout */
+@media (min-width: 768px) {
+  .steps-container {
+    flex-direction: row;
+    justify-content: center;
+    gap: 3rem;
+  }
+  .step-card {
+    text-align: center;
+    align-items: center;
+  }
+}
